@@ -1,0 +1,133 @@
+/* General Styles */
+.app-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+nav button:hover {
+    background-color: #0056b3;
+}
+
+/* Book Card Styles */
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.book-card {
+    width: 22%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.book-card h3 {
+    margin-bottom: 10px;
+}
+
+.book-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+/* Align Like, Heart, and Download buttons */
+.book-card .button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.book-card .button-group button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.book-card .button-group button:hover {
+    background-color: #ff4757;
+}
+
+.book-card .button-group button:active {
+    animation: click-animation 0.2s forwards;
+}
+
+@keyframes click-animation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Star Rating */
+.star-rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.star {
+    font-size: 20px;
+    cursor: pointer;
+    color: gray;
+}
+
+.star.filled {
+    color: gold;
+}
+
+/* User Details Page */
+.user-details {
+    padding: 20px;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.top-books,
+.top-reviews {
+    width: 45%;
+}
+
+.comments-section {
+    margin-top: 20px;
+}
+
+.user-read-books {
+    margin-bottom: 20px;
+}
